@@ -1,0 +1,194 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #f5f5f5;
+}
+html .container,
+body .container {
+  padding: 1px;
+  position: sticky;
+}
+html .container .header,
+body .container .header {
+  width: 100vw;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+html .container .header .header-title,
+body .container .header .header-title {
+  font-size: 18px;
+}
+html .container .header .search,
+body .container .header .search {
+  height: 10px;
+  width: 20%;
+  font-size: 14px;
+  padding: 16px 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #f7f7f7;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 5px;
+  outline: none;
+  cursor: text;
+}
+html .container .header .search:hover,
+body .container .header .search:hover {
+  background-color: #fff;
+}
+html .container .header .search:hover + #search-collaps,
+body .container .header .search:hover + #search-collaps {
+  display: block;
+  background-color: #ffffff;
+  z-index: 1000000;
+}
+html .container .header .search-tooltip,
+body .container .header .search-tooltip {
+  display: none;
+  position: absolute;
+  width: 10%;
+  top: 40%;
+  left: 60%;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 6px 10px;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 10000000;
+  font-size: 16px;
+  animation-name: down;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+html .container .headerInputs,
+body .container .headerInputs {
+  width: 100vw;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+html .container .headerInputs .cellNum,
+body .container .headerInputs .cellNum {
+  width: 5%;
+  padding: 5px 10px;
+  border: 1px solid rgba(33, 62, 64, 0.2);
+  background: #fff;
+  color: #000;
+  border-radius: 3px;
+  text-transform: uppercase;
+  outline: none;
+}
+html .container .headerInputs .cellValue,
+body .container .headerInputs .cellValue {
+  width: 90%;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(33, 62, 64, 0.2);
+  background: #fff;
+  color: #000;
+  outline: none;
+  cursor: text;
+}
+html .container .headerInputs .cellValue:hover,
+body .container .headerInputs .cellValue:hover {
+  border: 1px solid #333;
+}
+html #scroll-wrapper,
+body #scroll-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+html #scroll-wrapper #scrollbar-container,
+body #scroll-wrapper #scrollbar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+html #scroll-wrapper #scrollbar-container #vertical-scrollbar,
+body #scroll-wrapper #scrollbar-container #vertical-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background-color: rgba(155, 77, 77, 0.2);
+  cursor: pointer;
+}
+html #scroll-wrapper #scrollbar-container #horizontal-scrollbar,
+body #scroll-wrapper #scrollbar-container #horizontal-scrollbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+html #wrapper-div,
+body #wrapper-div {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+html #wrapper-div .canvas-div,
+body #wrapper-div .canvas-div {
+  position: absolute;
+  background: #fff;
+  cursor: cell;
+}
+html #wrapper-div .top-rect,
+body #wrapper-div .top-rect {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #b7b7b7;
+  transition: linear();
+  border: 2px solid #f5f5f5;
+}
+html #wrapper-div .cell-input,
+body #wrapper-div .cell-input {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  border: 3px solid #107c41;
+  z-index: 1001;
+  cursor: text;
+  outline: none;
+}
+html #wrapper-div .selection,
+body #wrapper-div .selection {
+  position: absolute;
+  display: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 2px;
+  border: 2px solid #107c41;
+  outline: none;
+}
+html #wrapper-div .selection-block,
+body #wrapper-div .selection-block {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #107c41;
+  border: 1px solid #fff;
+  cursor: crosshair;
+  display: none;
+}/*# sourceMappingURL=index.css.map */
